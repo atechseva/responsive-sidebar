@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Sidebar</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="Icons/icofont/icofont.min.css">
+<style type="text/css">
+    .dash [class^="icofont-"]{font-size: 100px;
+        color: white;}
+    .dash a{color: #292C2D;}
+    .card{border: 10px white solid !important;
+    }    
+</style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <button type="button" id="sidebarCollapse">
+               <span> <i class="fas fa-bars text-white fa-2x"></i></span>
+                <!-- <span>Toggle Sidebar</span> -->
+            </button>
+            <div class="sidebar-header">
+                <img src="atechseva-logo.png" alt="" width="200px">
+                <strong>AS</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                
+                
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg bg-light" id="navbar_top">
+                <div class="container-fluid">
+
+                    
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+<!-- Main Content------------------------ -->
+<section class="dash container mt-5"><div class="card-group">
+    <div class="card" style="background: greenyellow;">
+      <div class="card-body text-center">
+       <a href="view-student.php"> 
+       <i class="icofont-eye-alt"></i>
+       <h4>View Student</h4>
+       </a>  
+      </div>
+    </div>
+    <div class="card" style="background: aquamarine;">
+     <div class="card-body text-center">
+      <a href="add-student.php"> 
+      <i class="icofont-contact-add"></i>
+       <h4>Add Student</h4>
+      </a>
+      </div>
+    </div>
+    <div class="card" style="background: coral;">
+  <div class="card-body text-center">
+        <a href="search-student.php"> 
+       <i class="icofont-search-user"></i>
+       <h4>Search Student</h4>
+       </a>
+      </div>  </div>
+    <div class="card" style="background: orange;">
+      <div class="card-body text-center">
+      <a href="fees.php">  
+       <i class="icofont-money-bag"></i>
+       <h4>Fees</h4>
+      </a>
+      </div>
+    </div>
+  </div>
+  
+  </section>
+  
+  <section class="dash container"><div class="card-group">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+       <a href="results.php">    
+       <i class="icofont-bullseye"></i>
+       <h4>Result</h4>
+      </a>
+      </div>
+    </div>
+    <div class="card bg-warning">
+     <div class="card-body text-center">
+      <a href="admit-card.php"> 
+       <i class="icofont-id-card"></i>
+       <h4>Admit Card</h4>
+      </a>
+      </div>
+    </div>
+    <div class="card bg-success">
+  <div class="card-body text-center">
+      <a href="branch.php"> 
+      <i class="icofont-people"></i>
+       <h4>Branch</h4>
+      </a>
+      </div>  </div>
+      <div class="card bg-danger">
+  <div class="card-body text-center">
+      <a href="delete-student-by-roll.php"> 
+      <i class="icofont-people"></i>
+       <h4>Delete Student</h4>
+      </a>
+      </div>  </div>
+    
+  </div>
+  
+  </section>
+  
+  <section class="dash container">
+      <div class="card-group">
+  
+      <div class="card" style="background: coral;">
+      <div class="card-body text-center">
+      <a href="add-study-material.php"> 
+       <i class="icofont-book"></i>
+       <h4>Study Material</h4>
+       </a>
+      </div>
+      </div>
+      <div class="card" style="background: #bb3461;">
+      <div class="card-body text-center">
+      <a href="add-notice.php"> 
+       <i class="icofont-notification"></i>
+       <h4>Add Notice</h4>
+       </a>
+      </div>
+  </div>
+     <div class="card" style="background: #437584;">
+      <div class="card-body text-center">
+      <a href="add-quiz.php"> 
+       <i class="icofont-question-circle"></i>
+       <h4>Quiz</h4>
+       </a>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  
+<!-- content end------------------------- -->
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+              
+
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+    $("#sidebarCollapse").click(function(e) {
+        if($('#content').hasClass('open')) {
+            $('#content').removeClass('open');
+        } else {
+            $('#content').addClass('open');
+        }
+    });
+});
+    </script>
+ 
+
+  
+   
+    
+</body>
+
+</html>
